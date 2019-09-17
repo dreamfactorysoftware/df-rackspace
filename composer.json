@@ -28,7 +28,7 @@
     "wiki":   "https://wiki.dreamfactory.com"
   },
   "require":     {
-    "dreamfactory/df-file":    "~0.6.3",
+    "dreamfactory/df-file":    "dev-laravel-upgrade",
     "rackspace/php-opencloud": "^1.16"
   },
   "autoload":    {
