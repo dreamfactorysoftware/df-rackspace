@@ -27,6 +27,8 @@
     "issues": "https://github.com/dreamfactorysoftware/df-rackspace/issues",
     "wiki":   "https://wiki.dreamfactory.com"
   },
+  "minimum-stability": "dev",
+  "prefer-stable":     true,
   "require":     {
     "dreamfactory/df-file":    "~0.6.3",
     "rackspace/php-opencloud": "^1.16"
