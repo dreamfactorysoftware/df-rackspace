@@ -30,8 +30,9 @@
   "minimum-stability": "dev",
   "prefer-stable":     true,
   "require":     {
-    "dreamfactory/df-file":    "~0.7",
-    "rackspace/php-opencloud": "^1.16"
+    "php": "^8.0",
+    "dreamfactory/df-file":    "~0.8",
+    "php-opencloud/openstack": "^3.2"
   },
   "autoload":    {
     "psr-4": {

@@ -86,10 +86,15 @@ class RackspaceConfig extends BaseServiceConfigModel
                 break;
             case 'region':
                 $schema['type'] = 'picklist';
-                $schema['values'] = [
+                // Cloud Files is a regionalized service. You can create your Cloud Files containers in any Rackspace data center
+                // source https://docs.rackspace.com/docs/cloud-files/v1/general-api-info/service-access
+                $schema['values'] = [ 
                     ['label' => 'Chicago', 'name' => 'ORD', 'url' => 'https://identity.api.rackspacecloud.com'],
-                    ['label' => 'Dallas', 'name' => 'DFW', 'url' => 'https://identity.api.rackspacecloud.com'],
-                    ['label' => 'London', 'name' => 'LON', 'url' => 'https://lon.identity.api.rackspacecloud.com'],
+                    ['label' => 'Dallas/Ft. Worth', 'name' => 'DFW', 'url' => 'https://identity.api.rackspacecloud.com'],
+                    ['label' => 'London', 'name' => 'LON', 'url' => 'https://lon.identity.api.rackspacecloud.com'], 
+                    ['label' => 'Hong Kong', 'name' => 'HKG', 'url' => 'https://identity.api.rackspacecloud.com'],
+                    ['label' => 'Northern Virginia', 'name' => 'IAD', 'url' => 'https://identity.api.rackspacecloud.com'],
+                    ['label' => 'Sydney', 'name' => 'SYD', 'url' => 'https://identity.api.rackspacecloud.com'],
                 ];
                 $schema['description'] = 'Select the region to be accessed by this service connection.';
                 break;
