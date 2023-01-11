@@ -88,13 +88,7 @@ class OpenStackConfig extends BaseServiceConfigModel
                 $schema['description'] = 'The URL/endpoint for the service connection.';
                 break;
             case 'region':
-                $schema['type'] = 'picklist';
-                $schema['values'] = [
-                    ['label' => 'Chicago', 'name' => 'ORD', 'url' => 'https://identity.api.rackspacecloud.com'],
-                    ['label' => 'Dallas', 'name' => 'DFW', 'url' => 'https://identity.api.rackspacecloud.com'],
-                    ['label' => 'London', 'name' => 'LON', 'url' => 'https://lon.identity.api.rackspacecloud.com'],
-                ];
-                $schema['description'] = 'Select the region to be accessed by this service connection.';
+                $schema['description'] = 'The region to be accessed by this service connection.';
                 break;
         }
     }
