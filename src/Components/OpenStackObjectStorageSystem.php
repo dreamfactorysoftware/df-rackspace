@@ -18,7 +18,7 @@ use DreamFactory\Core\Utility\FileUtilities;
 use OpenStack\Common\Error\BadResponseError;
 use OpenStack\Common\Error\BaseError;
 use OpenStack\ObjectStore\v1\Service;
-use OpenStack\ObjectStore\Resource\Container;
+use OpenStack\ObjectStore\v1\Models\Container;
 use OpenStack\ObjectStore\v1\Models\StorageObject;
 
 use OpenStack\Identity\v2\Service as IdentityServiceV2;
