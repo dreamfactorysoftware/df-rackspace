@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.16.1] - 2026-11-18
+- Laravel 13 compatibility; requires php-opencloud/openstack 3.16 or later.
+
 ## [0.14.1] - 2018-01-25
 ### Fixed
 - DF-1285 Fixed error responses
